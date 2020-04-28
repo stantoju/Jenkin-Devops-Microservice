@@ -19,5 +19,16 @@ pipeline {
 				echo 'Integration Test'
 			}
 		}
+	} 
+	post {
+		always {
+			echo "I am the Shaman!"
+		}
+		success {
+			echo "I am a Success!"
+		}
+		failure {
+			echo "He is a failure!"
+		}
 	}
 }
